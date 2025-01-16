@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String and Math Operations</title>
+    <style>
+
+        button {
+            padding: 10px 15px;
+            background-color: #872814 ;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h1>String and Math Operations</h1>
+
+<h3>String Operations</h3>
+<div>
+    <label for="str-input">Enter your string 1: </label>
+    <input type="text" id="str-input" placeholder="Enter string1">
+    <label for="str-input">Enter your string 2: </label>
+    <input type="text" id="str-input1" placeholder="Enter string2">
+    <button onclick="StringOperations()">Show String Operations</button>
+</div>
+
+<p id="string-length"></p>
+<p id="uppercase-text"></p>
+<p id="lowercase-text"></p>
+<p id="concat"></p>
+
+<h3>Math Operations</h3>
+<div>
+    <label for="number-input">Enter a number: </label>
+    <input type="number" id="number-input" placeholder="Enter number">
+    <label for="power-input">Enter power: </label>
+    <input type="number" id="power-input" placeholder="Enter power">
+    <button onclick="MathOperations()">Show Math Operations</button>
+</div>
+
+<p id="pi-value"></p>
+<p id="rounded-value"></p>
+<p id="power-value"></p>
+<p id="floor-value"></p>
+
+<script>
+   
+    function StringOperations() 
+    {
+        const name = document.getElementById('str-input').value;
+        const name1 = document.getElementById('str-input1').value;
+       
+            document.getElementById('string-length').textContent = 'Length of the string : ' + name.length;
+           
+            document.getElementById('uppercase-text').textContent = 'Uppercase : ' + name.toUpperCase();
+           
+            document.getElementById('lowercase-text').textContent = 'Lowercase : ' + name.toLowerCase();
+
+            document.getElementById('concat').textContent = 'Concatenation : ' + name.concat("",name1);
+
+    }
+
+    function MathOperations() 
+    {
+        const num = parseFloat(document.getElementById('number-input').value);
+        const power = parseFloat(document.getElementById('power-input').value);
+      
+            document.getElementById('pi-value').textContent = 'Value of PI : ' + Math.PI;
+           
+            document.getElementById('rounded-value').textContent = 'Rounded value : ' +Math.round(num);
+
+            document.getElementById('floor-value').textContent = 'Floor value (x.y) : ' + Math.floor(num);
+           
+            document.getElementById('power-value').textContent = 'Power result (x^y) : ' + Math.pow(num, power);
+
+    }
+
+</script>
+</body>
+</html>
