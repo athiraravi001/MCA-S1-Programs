@@ -2,8 +2,8 @@
 #include<stdlib.h>
 void push();
 void pop();
-void display();
 void search();
+void display();
 struct node
 {
     int data;
