@@ -1,0 +1,33 @@
+.div1,.div2,.div3 {
+                    width:100%;
+                    height:3%;
+                    padding:2px;
+                    text-align:center;
+                    font-size:2.5vh;
+                    font-weight: bold;
+                  }
+.div1 {
+        background-color:#7434eb;
+        color:#16db5e;
+        border: 1px solid #7434eb;
+      }
+.p1 {
+      color:#16db5e;
+    }	
+
+.div2 {
+        background-color:#65db16;
+        color:#7434eb;
+        border: 1px solid #65db16; 
+      }
+.p2 {
+      color:#7434eb;
+    }
+.div3 {
+        background-color:#f3fa39;
+        color:#fa0f0f;
+        border: 1px solid #f3fa39;
+      }
+.p3 {
+      color:#fa0f0f;
+    }
