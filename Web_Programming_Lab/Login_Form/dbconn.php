@@ -10,3 +10,4 @@ echo "Successfully Connected<br>";
 else{
     echo "Not Connected";
 }
+?>
