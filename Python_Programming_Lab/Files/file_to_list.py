@@ -3,6 +3,3 @@ lines=[]
 for line in f:
     lines.append(line.strip())
 print(lines)
-
-
-    
