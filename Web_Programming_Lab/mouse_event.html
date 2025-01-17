@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mouse Over Event</title>
+  </head>
+  <body>
+    <h1>JavaScript Events</h1>
+    <h1>Mouse Over Event</h1>
+    <p id="content">Hover over me!</p>
+
+    <script>
+      const contentDiv = document.getElementById('content');
+      const initialText = 'Hover over me!';
+      const newContent = "<img src='https://www.wearegecko.co.uk/media/50316/mountain-3.jpg' alt='New Image' style='width:300px;'>" +
+    "<p>Rocky mountains under a clear sky.</p>";
+
+      contentDiv.addEventListener('mouseover', function () {
+        contentDiv.innerHTML = newContent;
+      });
+
+      contentDiv.addEventListener('mouseout', function () {
+        contentDiv.innerHTML = initialText;
+      });
+    </script>
+  </body>
+</html>
