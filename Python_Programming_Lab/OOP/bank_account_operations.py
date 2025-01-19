@@ -33,6 +33,4 @@ while(True):
         print("EXITED")
         break
     else:
-        print("Invalid choice")
-        
-    
+        print("Invalid choice")  
