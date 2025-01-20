@@ -10,4 +10,4 @@ print("\n----------------------------------------------------------\n")
 b=int(input("Enter the base of triangle : "))
 h=int(input("Enter the height of triangle : "))
 triangle=lambda b,h:0.5*b*h
-print("Area of rectangle = ",triangle(b,h))
+print("Area of triangle = ",triangle(b,h))
